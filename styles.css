@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'CheyenneHandBold';
+    src: url('CheyenneHandBold-Z6qz.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
+}
+
+@font-face {
+    font-family: 'PixelTactical';
+    src: url('PixelTactical-AWOx.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed; /* Keeps the header fixed on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    z-index: 1000; /* Ensures the header is on top of other elements */
+}
+
+.logo {
+    width: 50px; /* Adjust according to your logo's size */
+}
+
+
+.menu {
+    position: relative;  /* Added this */
+    left: -40px;
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001; /* Ensure it's above the header */
+}
+.line {
+    width: 100%;
+    height: 4px;
+    background-color:  #333;
+    margin-bottom: 5px;
+}
+
+
+
+.menu .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;  /* Increased the size for better visibility */
+    color: #fff;  /* Ensures the color is white */
+    background: none;  /* Removes any default background */
+    border: none;  /* Removes any default borders */
+    z-index: 1001;  /* Ensure it's above the header */
+}
+
+
+.menu .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px; /* Height of the header */
+    left: -120px;
+
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1001; /* Ensure it's above the header */
+}
+
+.menu .nav-links a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu .nav-links a:hover {
+    background-color: #555;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted from center to start */
+    align-items: center;
+    padding-top: 150px; /* Added padding for the fixed header */
+}
+
+#home h1 {
+    font-family: 'PixelTactical', sans-serif; 
+    margin-bottom: 0px;
+}
+
+#home {
+    background: url('bg.jpg') no-repeat center center/cover;
+    padding-top: 70px;
+}
+
+#about {
+    background: url('au.jpg') no-repeat center center/cover;
+}
+
+#contact {
+    background: url('cu.gif') no-repeat center center/cover;
+}
+
+.subtitle {
+    font-size:18px;
+    margin-top: 10px;
+    font-family: 'CheyenneHandBold', sans-serif; 
+}
+
+.social-links a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
