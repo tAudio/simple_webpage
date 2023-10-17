@@ -116,6 +116,7 @@ header {
 }
 
 #about {
+
     background: url('au.jpg') no-repeat center center/cover;
 }
 
@@ -137,4 +138,9 @@ header {
 
 .social-links a:hover {
     text-decoration: underline;
+}
+
+#about_div{
+    margin-top: -100px;
+    padding: 10px;
 }
