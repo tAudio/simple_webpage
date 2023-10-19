@@ -17,8 +17,8 @@
                 <div class="line"></div>
             </div>
             <nav class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
+                <a  href="#home">Home</a>
+                <a  href="#about">About Us</a>
                 <a href="#contact">Contact Us</a>
             </nav>
         </div>
@@ -26,31 +26,36 @@
 
     <!-- Home Section -->
     <section id="home" class="section">
-        <h1>We're TAudio</h1>
-        <p class="subtitle">we create music machines for geeks</p>
+        <div id="home_titles">
+            <h1>We're TAudio</h1>
+            <p class="subtitle">we create music machines for geeks</p>
+        </div>
+
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="section">
         <div id="about_div">
-
-    
-        <h2>Here, music isn't just heard; it's felt.</h2>
-        <p>In the intricate crossroads of past and future, tAudio thrives.
-            we're a reflection of a timeless era, drawing inspiration from the iconic sound chips of vintage gaming consoles. With a meticulous blend of unique algorithms and vintage charm, our synths provide a soundscape that resonates with both the echoes of the past and the possibilities of the digital age.
-        </p>
-    </div>
+                <h2>Here, music isn't just heard; it's felt.</h2>
+                <p>In the intricate crossroads of past and future, tAudio thrives.
+                    we're a reflection of a timeless era, drawing inspiration from the iconic sound chips of vintage gaming consoles. With a meticulous blend of unique algorithms and vintage charm, our synths provide a soundscape that resonates with both the echoes of the past and the possibilities of the digital age.
+                </p>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
     <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">YouTube</a>
-            <a href="#">Discord</a>
-            <a href="#">Email</a>
+
+        <div id="contact_div">
+            <h2>Contact Us</h2>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">YouTube</a>
+                <a href="#">Discord</a>
+                <a href="#">Email</a>
+            </div>
         </div>
+
     </section>
 
     <!-- Optional JavaScript -->
@@ -59,6 +64,14 @@
                 let navLinks = document.querySelector('.nav-links');
                 navLinks.style.display = navLinks.style.display === 'block' ? 'none' : 'block';
             });
+
+
+            document.querySelector('.nav-links').addEventListener('click', function() {
+                let navLinks = document.querySelector('.nav-links');
+                navLinks.style.display =  'none' ;
+            });
+
+
     </script>
 </body>
 </html>
