@@ -1,12 +1,24 @@
 @font-face {
-    font-family: 'CheyenneHandBold';
-    src: url('CheyenneHandBold-Z6qz.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
+    font-family: 'GlacialIndifference-Bold';
+    src: url('GlacialIndifference-Bold.otf') format('opentype'); /* Adjust the path if you place it in another directory */
 }
 
 @font-face {
-    font-family: 'PixelTactical';
-    src: url('PixelTactical-AWOx.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
+    font-family: 'MessyChild-axdLa';
+    src: url('MessyChild-axdLa.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
 }
+
+
+@font-face {
+    font-family: 'GlacialIndifference-Regular';
+    src: url('GlacialIndifference-Regular.otf') format('opentype'); /* Adjust the path if you place it in another directory */
+}
+
+@font-face {
+    font-family: 'chawp';
+    src: url('chawp.ttf') format('opentype'); /* Adjust the path if you place it in another directory */
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -30,7 +42,7 @@ header {
     padding: 10px 20px;
     background-color: #fff;
     color: #333;
-    z-index: 1000; /* Ensures the header is on top of other elements */
+    z-index: 100; /* Ensures the header is on top of other elements */
 }
 
 .logo {
@@ -97,6 +109,7 @@ header {
 }
 
 .section {
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,13 +119,21 @@ header {
 }
 
 #home h1 {
-    font-family: 'PixelTactical', sans-serif; 
+    font-family: 'GlacialIndifference-Bold', sans-serif; 
     margin-bottom: 0px;
+    font-size: 1.5em;
 }
 
 #home {
     background: url('bg.png') no-repeat center center/cover;
-    padding-top: 100px;
+    height: 51vh;
+}
+
+#seperator3{
+
+    position: absolute;
+    top: 73vh;
+   
 }
 
 #about {
@@ -125,9 +146,9 @@ header {
 }
 
 .subtitle {
-    font-size:18px;
+    font-size:23px;
     margin-top: 10px;
-    font-family: 'CheyenneHandBold', sans-serif; 
+    font-family: 'chawp', sans-serif; 
 }
 
 .social-links a {
@@ -141,6 +162,7 @@ header {
 }
 
 #about_div{
+    font-family: 'GlacialIndifference-Regular', sans-serif; 
     text-shadow: 2px 2px 4px #000000;
     color: whitesmoke;
     margin-top: -100px;
@@ -148,14 +170,73 @@ header {
 }
 
 #home_titles{
-    position: absolute;
-    top: 47%;
+
     text-align: center;
 }
 
+#about_div p{
+    
+    text-align: center;
+    
+}
+
+
 #contact_div{
+    font-family: 'GlacialIndifference-Bold', sans-serif; 
+
+    text-align: center;
     margin-top: 10%;
 }
+
+#contact_div h2{
+    font-size: 2.2em;
+}
+
+#intro_gif{
+
+    top: 25vh;
+    width: 100vw;
+    z-index: 101;
+    position: absolute;
+
+}
+
+
+#seperator_title{
+    font-family: 'GlacialIndifference-Bold', sans-serif; 
+
+    text-align: center;
+    padding-top: 13vh;
+}
+
+#seperator{
+
+
+    color: black;
+    background-color: white;
+
+}
+
+.preloader{
+    height: 100vh;
+    /* display: none; */
+}
+
+#topseperator{
+    height:50px;
+}
+
+#seperator4{
+    position: absolute;
+    top: 225vh;
+}
+
+.social-links{
+    font-size:23px;
+    
+    font-family: 'chawp', sans-serif; 
+}
+
 
 @media (min-width: 600px) {
 
@@ -163,11 +244,33 @@ header {
         font-size: 3.5em;
         
     }
+
+    h1{
+        font-size: 2em;
+    }
+
     #about_div p{
         font-size: 1.5em;
         
     }
 
+    #home{
+        top: 27vh;
+        height: 63vh;
+    }
+    #seperator3{
+
+  
+        top: 94vh;
+    }
+    #intro_gif{
+        top: 0vh;
+    }
+    
+    #seperator_title{
+
+        font-size: 2.5em;
+    }
 
 
 }
